@@ -33,7 +33,7 @@ const navLinks =
     <Router>
       <NavbarEffect links={navLinks}/>
       <Routes>
-        <Route path="/" element={<Home/>}/>
+        <Route path="#/" element={<Home/>}/>
         <Route path="/home" element={<Home/>}/>
         <Route path="/project" element={<Project/>}/>
         <Route path="/services" element={<Services/>}/>
