@@ -10,12 +10,20 @@ import Notfound from "./Page/notfound";
 
 
 function App() {
-  const navLinks = [
-    { name: "Home", href: "/" },
-    { name: "Services", href: "/services" },
-    { name: "Projects", href: "/project" },
-    { name: "Contact", href: "/contact" },
-  ];
+const navLinks =
+  process.env.NODE_ENV === "production"
+    ? [
+        { name: "Home", href: "#/" },
+        { name: "Services", href: "#/services" },
+        { name: "Projects", href: "#/project" },
+        { name: "Contact", href: "#/contact" },
+      ]
+    : [
+        { name: "Home", href: "/" },
+        { name: "Services", href: "/services" },
+        { name: "Projects", href: "/project" },
+        { name: "Contact", href: "/contact" },
+      ];
 
 
   const Router =
