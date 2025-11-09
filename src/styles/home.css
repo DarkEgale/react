@@ -16,6 +16,14 @@
     height: fit-content;
     flex-wrap: wrap;
   }
+  .hero_img{
+    width: 100%;
+    max-width: 100%;
+  }
+  .hero_img img{
+    width: 100%;
+    max-width: 100%;
+  }
 }
 .rotating-img {
   position: absolute;

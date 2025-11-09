@@ -6,3 +6,13 @@
     align-items: center;
     height: 100vh;
 }
+@media (max-width:740px) {
+    #services{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 50px;
+        height: fit-content;
+        padding-top: 70px;
+    }
+}
