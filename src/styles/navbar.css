@@ -5,8 +5,8 @@ nav{
     position: fixed;
     z-index: 9999999999;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     width: 100%;
     height: 60px;
     font-family: 'Poppins', sans-serif;
@@ -24,16 +24,54 @@ nav ul li a{
     color: white;
     font-size: 1.2rem;
 }
+
+ nav label{
+    width: 50px;
+    height: 50px;
+    margin-left: calc(50% - 50px);
+    display: none;
+ }
+ nav label img{
+    width: 100%;
+    height: 100%;
+ }
+ #check{
+    display: none;
+ }
  @media (max-width: 740px) {
+    nav{
+        display: block;
+        position: fixed;
+    }
+
+    nav label{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+    }
     nav ul{
         width: 100%;
         height: fit-content;
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 60px;
+        margin-top: -8px;
+        background: black;
+        height: 100vh;
+        transform: translateY(100vh);
+        transition: 0.3s linear;
     }
     nav ul li {
         list-style: block;
     }
+
+    #check:checked ~ ul{
+        transform: translateY(0);
+    }
+ }
+
+ .active{
+    border-bottom: 1px solid white;
  }

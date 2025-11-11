@@ -1,5 +1,9 @@
+
+import '../styles/notfound.css'
 export default function Notfound(){
     return(
-        <h1>File Not Found 404</h1>
+        <section id="notfound">
+            <h1>Error: 404 File Not Found</h1>
+        </section>
     )
 }

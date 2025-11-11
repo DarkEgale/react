@@ -14,11 +14,11 @@ export default function Contact(){
                 <input type="submit" value="Submit" />
             </form>
             <div id="social">
-                <button>Facebook</button>
-                <button>Facebook</button>
-                <button>Facebook</button>
-                <button>Facebook</button>
-                <button>Facebook</button>
+                <span>Facebook</span>
+                <span>WhatsApp</span>
+                <span>Fiver</span>
+                <span>Linkdin</span>
+                <span>GitHub</span>
             </div>
         </section>
     )

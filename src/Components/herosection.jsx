@@ -3,23 +3,22 @@ import logo from "../images/logo512.png";
 import "../styles/home.css";
 
 export default function HeroSection(props) {
-  const numImages = 30;
+  const numImages = 15;
   const [positions, setPositions] = useState([]);
 
 
-  useEffect(() => {
-    const pos = [];
-    for (let i = 0; i < numImages; i++) {
-      const baseTop = Math.random() * 100;
-      const baseLeft = Math.random() * 100;
-      const size = 30 + Math.random() * 20;
-      const delay = Math.random() * 2; 
-      pos.push({ top: baseTop, left: baseLeft, size, delay });
-    }
-    setPositions(pos);
+useEffect(() => {
+  const pos = [];
+  for (let i = 0; i < numImages; i++) {
+    const baseTop = Math.random() * 100;
+    const baseLeft = Math.random() * 100;
+    const size = 30 + Math.random() * 20;
+    pos.push({ top: baseTop, left: baseLeft, size });
+  }
+  setPositions(pos);
+}, []); 
 
 
-  }, []);
 
   return (
     <section className="home-section">
@@ -48,7 +47,7 @@ export default function HeroSection(props) {
         <div/>
       </div>
       <div className="hero_img">
-        <img src={props.hero_img} alt="Front-end development" />
+        <img className="heroImg" src={props.hero_img} alt="Front-end development" />
       </div>
     </section>
   );

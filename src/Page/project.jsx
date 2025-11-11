@@ -24,7 +24,7 @@ export default function Project() {
   })
 
   if (loading) {
-    return <p>Loading...</p>;
+    return <p className="loding">Loading...</p>;
   }
 
   return (
