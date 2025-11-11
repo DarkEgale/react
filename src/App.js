@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom"; // <-- change here
 import './App.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import NavbarEffect from './Components/navbar';
@@ -11,26 +11,27 @@ import About from "./Page/about";
 
 function App() {
   const navLinks = [
-    { name: "Home", href: "/" },
-    { name: "About", href: "/about" },
-    { name: "Services", href: "/services" },
-    { name: "Projects", href: "/project" },
-    { name: "Contact", href: "/contact" },
+    { name: "Home", href: "#/" },
+    { name: "About", href: "#/about" },
+    { name: "Services", href: "#/services" },
+    { name: "Projects", href: "#/project" },
+    { name: "Contact", href: "#/contact" },
   ];
 
   return (
-    <BrowserRouter>
+    <HashRouter> 
       <NavbarEffect links={navLinks} />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About/>}/>
+        <Route path="/about" element={<About />} />
         <Route path="/project" element={<Project />} />
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<Notfound />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
 export default App;
+
