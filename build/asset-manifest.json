@@ -1,19 +1,21 @@
 {
   "files": {
-    "main.css": "/react/static/css/main.66b89f21.css",
-    "main.js": "/react/static/js/main.d9c7c4ce.js",
+    "main.css": "/react/static/css/main.2cb23978.css",
+    "main.js": "/react/static/js/main.0f9d9f56.js",
     "static/js/453.117b0875.chunk.js": "/react/static/js/453.117b0875.chunk.js",
+    "static/media/profile.png": "/react/static/media/profile.2d0ddb3c7d38098c9e68.png",
     "static/media/bootstrap-icons.woff?": "/react/static/media/bootstrap-icons.1295669cd4e305c97f2c.woff",
     "static/media/Capture.png": "/react/static/media/Capture.062e2a0930e1d157ae2e.png",
     "static/media/bootstrap-icons.woff2?": "/react/static/media/bootstrap-icons.92ea18a81d737146ff04.woff2",
     "index.html": "/react/index.html",
     "static/media/code_logo.svg": "/react/static/media/code_logo.7ad2ab68bb50cdc55117fc9fc657abdc.svg",
-    "main.66b89f21.css.map": "/react/static/css/main.66b89f21.css.map",
-    "main.d9c7c4ce.js.map": "/react/static/js/main.d9c7c4ce.js.map",
+    "static/media/menu_icon.svg": "/react/static/media/menu_icon.e9b8324f12ddc1932f8682954bcbb6a9.svg",
+    "main.2cb23978.css.map": "/react/static/css/main.2cb23978.css.map",
+    "main.0f9d9f56.js.map": "/react/static/js/main.0f9d9f56.js.map",
     "453.117b0875.chunk.js.map": "/react/static/js/453.117b0875.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.66b89f21.css",
-    "static/js/main.d9c7c4ce.js"
+    "static/css/main.2cb23978.css",
+    "static/js/main.0f9d9f56.js"
   ]
 }
